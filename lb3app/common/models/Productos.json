@@ -1,0 +1,778 @@
+{
+  "name": "Productos",
+  "options": {
+    "idInjection": false,
+    "postgresql": {
+      "schema": "beeftran",
+      "table": "productos"
+    }
+  },
+  "properties": {
+    "proCod": {
+      "type": "String",
+      "required": true,
+      "length": 14,
+      "precision": null,
+      "scale": null,
+      "id": 1,
+      "postgresql": {
+        "columnName": "pro_cod",
+        "dataType": "character varying",
+        "dataLength": 14,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "proCodint": {
+      "type": "String",
+      "required": false,
+      "length": 9,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_codint",
+        "dataType": "character varying",
+        "dataLength": 9,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proDorig": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_dorig",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proDdest": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_ddest",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proClasif": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_clasif",
+        "dataType": "character varying",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proTarab": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 7,
+      "scale": 3,
+      "postgresql": {
+        "columnName": "pro_tarab",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 7,
+        "dataScale": 3,
+        "nullable": "YES"
+      }
+    },
+    "proTarac": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 7,
+      "scale": 3,
+      "postgresql": {
+        "columnName": "pro_tarac",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 7,
+        "dataScale": 3,
+        "nullable": "YES"
+      }
+    },
+    "proLang": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_lang",
+        "dataType": "character varying",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proUmed": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_umed",
+        "dataType": "character varying",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proFtoeti": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_ftoeti",
+        "dataType": "character varying",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proTraza": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_traza",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proDfvto": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 4,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_dfvto",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proMcong": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 4,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_mcong",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proUnxcaj": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 2,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_unxcaj",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 2,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proPesmin": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 7,
+      "scale": 2,
+      "postgresql": {
+        "columnName": "pro_pesmin",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 7,
+        "dataScale": 2,
+        "nullable": "YES"
+      }
+    },
+    "proPesmax": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 7,
+      "scale": 2,
+      "postgresql": {
+        "columnName": "pro_pesmax",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 7,
+        "dataScale": 2,
+        "nullable": "YES"
+      }
+    },
+    "proMitad": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 2,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_mitad",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 2,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proGrms": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 4,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_grms",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proEstxcaj": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 2,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_estxcaj",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 2,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proTarae": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 7,
+      "scale": 3,
+      "postgresql": {
+        "columnName": "pro_tarae",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 7,
+        "dataScale": 3,
+        "nullable": "YES"
+      }
+    },
+    "proUnpou": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 2,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_unpou",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 2,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proUnical1": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 2,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_unical1",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 2,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proUnical2": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 2,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_unical2",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 2,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proCodcli": {
+      "type": "String",
+      "required": false,
+      "length": 9,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_codcli",
+        "dataType": "character varying",
+        "dataLength": 9,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proActivo": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_activo",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proPeseti": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_peseti",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proCodcli1": {
+      "type": "String",
+      "required": false,
+      "length": 5,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_codcli1",
+        "dataType": "character varying",
+        "dataLength": 5,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proPesexac": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 4,
+      "scale": 2,
+      "postgresql": {
+        "columnName": "pro_pesexac",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 2,
+        "nullable": "YES"
+      }
+    },
+    "proNsenasa": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_nsenasa",
+        "dataType": "character varying",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proNrpe": {
+      "type": "String",
+      "required": false,
+      "length": 25,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_nrpe",
+        "dataType": "character varying",
+        "dataLength": 25,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proTemp": {
+      "type": "String",
+      "required": false,
+      "length": 40,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_temp",
+        "dataType": "character varying",
+        "dataLength": 40,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proMarca": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_marca",
+        "dataType": "character varying",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proEtqvta": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_etqvta",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proNomenc": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_nomenc",
+        "dataType": "character varying",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proDescnom": {
+      "type": "String",
+      "required": false,
+      "length": 40,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_descnom",
+        "dataType": "character varying",
+        "dataLength": 40,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proGarron": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_garron",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proCong": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_cong",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proLeyenf": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_leyenf",
+        "dataType": "character varying",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proLeycong": {
+      "type": "String",
+      "required": false,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_leycong",
+        "dataType": "character varying",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proImplote": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_implote",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proImphora": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_imphora",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proCmaxcte": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 3,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_cmaxcte",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 3,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proCean": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_cean",
+        "dataType": "character varying",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proCeankb": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 7,
+      "scale": 2,
+      "postgresql": {
+        "columnName": "pro_ceankb",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 7,
+        "dataScale": 2,
+        "nullable": "YES"
+      }
+    },
+    "proEmbal": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 9,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_embal",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 9,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proCalib": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_calib",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proPminc": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 7,
+      "scale": 3,
+      "postgresql": {
+        "columnName": "pro_pminc",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 7,
+        "dataScale": 3,
+        "nullable": "YES"
+      }
+    },
+    "proPmaxc": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 7,
+      "scale": 3,
+      "postgresql": {
+        "columnName": "pro_pmaxc",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 7,
+        "dataScale": 3,
+        "nullable": "YES"
+      }
+    },
+    "proHora": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_hora",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "proPorc": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 4,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "pro_porc",
+        "dataType": "numeric",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "proLang1": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "pro_lang1",
+        "dataType": "character varying",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    }
+  }
+}

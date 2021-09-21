@@ -1,0 +1,12 @@
+simple role
+ej: 1 puede ver los usuarios
+ej: 2 puede crear usuarios
+
+comp role
+ej: 1 admin de usuarios   simple 1, simple 2
+
+
+srolcomprol
+rol com , rol simple
+ej: 1,1
+    1,2

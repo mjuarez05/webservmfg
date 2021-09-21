@@ -1,0 +1,61 @@
+{
+  "name": "Transaccion",
+  "plural": "transacciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "include": {
+    "relation": "children",
+    "scope": {
+      "include": {
+        "relation": "children"
+      }
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "trx": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "component": {
+      "type": "string",
+      "required": true
+    },
+    "menuId": {
+      "type": "number",
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {
+    "children": {
+      "type": "hasMany",
+      "model": "Transaccion",
+      "foreignKey": "menuId"
+    },
+    "roles": {
+      "type": "hasMany",
+      "model": "Role",
+      "foreignKey": "transId",
+      "through": "TransMap"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

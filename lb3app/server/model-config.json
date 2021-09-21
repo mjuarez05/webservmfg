@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "MarfrigWebApp",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "MarfrigWebApp",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "MarfrigWebApp",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "MarfrigWebApp",
+    "public": true,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "MarfrigWebApp",
+    "public": true
+  },
+  "Usuario": {
+    "dataSource": "MarfrigWebApp",
+    "public": true
+  },
+  "Transaccion": {
+    "dataSource": "MarfrigWebApp",
+    "schema":"public",
+    "public": true
+  },
+  "TransMap": {
+    "dataSource": "MarfrigWebApp",
+    "public": true
+  },
+  "Productos": {
+    "dataSource": "dbtraza",
+    "public": true
+  }
+}

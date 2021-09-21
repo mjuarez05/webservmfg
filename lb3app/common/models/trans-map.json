@@ -1,0 +1,27 @@
+{
+  "name": "TransMap",
+  "plural": "transmaps",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "transId": {
+      "type": "number"
+    },
+    "roleId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "transaccion": {
+      "type": "belongsTo",
+      "model": "Transaccion",
+      "foreignKey": "transId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
