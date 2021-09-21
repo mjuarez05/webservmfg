@@ -1,0 +1,10 @@
+{
+  "host": "servdbase",
+  "port": 5432,
+  "url": "postgres://postgres:Marfrig987@servdbase:5432/MarfrigWebApp",
+  "database": "MarfrigWebApp",
+  "password": "Marfrig987",
+  "name": "MarfrigWebApp",
+  "user": "postgres",
+  "connector": "postgresql"
+}

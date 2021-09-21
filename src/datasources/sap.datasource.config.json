@@ -1,0 +1,11 @@
+{
+  "name": "sap",
+  "connector": "saphana",
+  "host": "10.26.160.67",
+  "port": 35015,
+  "user": "PHP",
+  "password": "Gardel2020",
+  "database": "SAPABAP1",
+  "schema": "SAPABAP1",
+  "debug":true
+}
