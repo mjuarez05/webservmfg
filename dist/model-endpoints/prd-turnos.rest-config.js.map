@@ -1,0 +1,1 @@
+{"version":3,"file":"prd-turnos.rest-config.js","sourceRoot":"","sources":["../../src/model-endpoints/prd-turnos.rest-config.ts"],"names":[],"mappings":";;AACA,sCAAoC;AAEpC,MAAM,MAAM,GAA2B;IACrC,KAAK,EAAE,kBAAS;IAChB,OAAO,EAAE,UAAU;IACnB,UAAU,EAAE,eAAe;IAC3B,QAAQ,EAAE,aAAa;CACxB,CAAC;AACF,MAAM,CAAC,OAAO,GAAG,MAAM,CAAC"}

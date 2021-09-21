@@ -1,0 +1,1 @@
+{"version":3,"file":"ciudad.rest-config.js","sourceRoot":"","sources":["../../src/model-endpoints/ciudad.rest-config.ts"],"names":[],"mappings":";;AACA,sCAAiC;AAEjC,MAAM,MAAM,GAA2B;IACrC,KAAK,EAAE,eAAM;IACb,OAAO,EAAE,UAAU;IACnB,UAAU,EAAE,eAAe;IAC3B,QAAQ,EAAE,UAAU;CACrB,CAAC;AACF,MAAM,CAAC,OAAO,GAAG,MAAM,CAAC"}

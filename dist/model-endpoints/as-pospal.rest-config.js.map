@@ -1,0 +1,1 @@
+{"version":3,"file":"as-pospal.rest-config.js","sourceRoot":"","sources":["../../src/model-endpoints/as-pospal.rest-config.ts"],"names":[],"mappings":";;AACA,sCAAmC;AAEnC,MAAM,MAAM,GAA2B;IACrC,KAAK,EAAE,iBAAQ;IACf,OAAO,EAAE,UAAU;IACnB,UAAU,EAAE,eAAe;IAC3B,QAAQ,EAAE,aAAa;CACxB,CAAC;AACF,MAAM,CAAC,OAAO,GAAG,MAAM,CAAC"}

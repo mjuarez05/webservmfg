@@ -1,0 +1,1 @@
+{"version":3,"file":"areas.rest-config.js","sourceRoot":"","sources":["../../src/model-endpoints/areas.rest-config.ts"],"names":[],"mappings":";;AACA,sCAAgC;AAEhC,MAAM,MAAM,GAA2B;IACrC,KAAK,EAAE,cAAK;IACZ,OAAO,EAAE,UAAU;IACnB,UAAU,EAAE,eAAe;IAC3B,QAAQ,EAAE,QAAQ;CACnB,CAAC;AACF,MAAM,CAAC,OAAO,GAAG,MAAM,CAAC"}

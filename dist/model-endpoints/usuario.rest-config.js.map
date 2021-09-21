@@ -1,0 +1,1 @@
+{"version":3,"file":"usuario.rest-config.js","sourceRoot":"","sources":["../../src/model-endpoints/usuario.rest-config.ts"],"names":[],"mappings":";;AACA,sCAAkC;AAElC,MAAM,MAAM,GAA2B;IACrC,KAAK,EAAE,gBAAO;IACd,OAAO,EAAE,UAAU;IACnB,UAAU,EAAE,eAAe;IAC3B,QAAQ,EAAE,WAAW;CACtB,CAAC;AACF,MAAM,CAAC,OAAO,GAAG,MAAM,CAAC"}

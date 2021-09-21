@@ -1,0 +1,1 @@
+{"version":3,"file":"accesstoken.rest-config.js","sourceRoot":"","sources":["../../src/model-endpoints/accesstoken.rest-config.ts"],"names":[],"mappings":";;AACA,sCAAsC;AAEtC,MAAM,MAAM,GAA2B;IACrC,KAAK,EAAE,oBAAW;IAClB,OAAO,EAAE,UAAU;IACnB,UAAU,EAAE,KAAK;IACjB,QAAQ,EAAE,eAAe;CAC1B,CAAC;AACF,MAAM,CAAC,OAAO,GAAG,MAAM,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"rolemapping.rest-config.js","sourceRoot":"","sources":["../../src/model-endpoints/rolemapping.rest-config.ts"],"names":[],"mappings":";;AACA,sCAAsC;AAEtC,MAAM,MAAM,GAA2B;IACrC,KAAK,EAAE,oBAAW;IAClB,OAAO,EAAE,UAAU;IACnB,UAAU,EAAE,eAAe;IAC3B,QAAQ,EAAE,eAAe;CAC1B,CAAC;AACF,MAAM,CAAC,OAAO,GAAG,MAAM,CAAC"}
