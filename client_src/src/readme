@@ -1,0 +1,14 @@
+empresa->tabla
+planta->planta
+impresora->tabla
+turno->tabla
+
+producto->
+nr de pallet->readonly
+peso->readnly ---socket
+btn apertura
+btn cerrar parcial
+btn cerrar pallet
+
+lista de ultimos pallet
+

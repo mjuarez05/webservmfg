@@ -1,0 +1,78 @@
+{
+  "name": "client_src",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@loadable/component": "^5.14.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/user-event": "^8.1.0",
+    "axios": "^0.21.0",
+    "dayjs": "^1.9.6",
+    "delete": "^1.1.0",
+    "devextreme": "20.2.4",
+    "devextreme-react": "20.2.4",
+    "i18next": "^19.1.0",
+    "i18next-browser-languagedetector": "^4.0.1",
+    "i18next-xhr-backend": "^3.2.2",
+    "julian-date": "^1.0.1",
+    "make-dir": "^3.1.0",
+    "moment": "^2.29.1",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "rc-tree": "^4.0.0",
+    "react": "^17.0.1",
+    "react-content-loader": "^5.1.4",
+    "react-datetime-picker": "^3.0.4",
+    "react-dock": "^0.3.0",
+    "react-dom": "^17.0.1",
+    "react-export-excel": "^0.5.3",
+    "react-fa": "^5.0.0",
+    "react-full-screen": "^0.2.5",
+    "react-i18next": "^11.0.3",
+    "react-moment": "^1.0.0",
+    "react-native": "^0.63.4",
+    "react-onclickoutside": "^6.9.0",
+    "react-redux": "^7.2.2",
+    "react-scripts": "4.0.1",
+    "react-table": "^6.10.2",
+    "react-toastify": "^6.1.0",
+    "react-treebeard": "^3.2.4",
+    "react-widgets": "^4.6.1",
+    "react-widgets-moment": "^4.0.30",
+    "recharts": "^2.0.0-beta.1",
+    "recursive-copy": "^2.0.11",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "socket.io": "^3.0.3",
+    "socket.io-client": "^3.0.3",
+    "use-deep-compare-effect": "^1.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postbuild": "node postbuild.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy": "http://localhost:3000/",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "devextreme-cldr-data": "^1.0.3",
+    "globalize": "^1.6.0"
+  }
+}

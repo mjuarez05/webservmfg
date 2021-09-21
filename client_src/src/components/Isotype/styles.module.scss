@@ -1,0 +1,11 @@
+.container {
+    height: var(--topbar-height);
+    display: flex;
+    background-color: var(--primary)
+}
+
+.container img {
+    width: calc(var(--topbar-height) - 1rem);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,16 @@
+.container {
+  /* border-top: 1px solid var(--primary); */
+  padding: var(--default-padding);
+  background-color: var(--tab-background);
+  height: calc(100vh - (var(--topbar-height) * 1.9));
+  border-bottom-left-radius: 3px;
+  display: flex;
+  /* justify-content: flex-start; */
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  overflow-y: auto;
+  color: var(--dark);
+}

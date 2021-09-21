@@ -1,0 +1,51 @@
+.form {
+  text-align: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+  /* text-align: center; */
+  margin: var(--default-margin);
+  margin-top: -5.9rem;
+  margin-bottom: 1.8rem;
+  & .shadow {
+    text-shadow: 0 0 3px lightgray;
+  }
+}
+
+.title {
+  /* text-align: center; */
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: var(--light);
+  /* padding-bottom: 2rem; */
+  margin-bottom: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.titleText {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  margin-left: 4rem;
+}
+
+.eliminar {
+  border: 0;
+  cursor: pointer;
+}
+
+.eliminar:hover {
+  box-shadow: 0 0 5px gray;
+}
+
+.detail {
+  background-color: var(--background) !important;
+  color: var(--dark);
+  text-align: center;
+  border-radius: 0.2rem;
+  margin-top: 0.2rem;
+  & span {
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+  }
+}

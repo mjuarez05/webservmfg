@@ -1,0 +1,8 @@
+.content {
+  display: flex;
+  width: calc(100vw - var(--leftbar-width));
+  height: calc(100vh - var(--topbar-height));
+  z-index: 10;
+  background: var(--background);
+  transition: all 0.2s ease;
+}

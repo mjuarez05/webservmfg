@@ -1,0 +1,39 @@
+.container {
+    padding: var(--default-padding);
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    border-bottom: 2px solid white; // border-left: 1px solid transparent; // border-right: 1px solid transparent;
+    // border-top: 1px solid transparent;
+    margin-bottom: -2px;
+    color: var(--dark);
+    cursor: pointer;
+    z-index: 1001;
+    border-top-left-radius: var(--default-border-radius);
+    border-top-right-radius: var(--default-border-radius);
+}
+
+.container:active {
+    background-color: var(--tab-background);
+    color: var(--tab-color);
+}
+
+.active {
+    background-color: var(--tab-background);
+    color: var(--tab-color);
+    border-bottom: 2px solid var(--light); // border-left: 1px solid var(--primary); // border-right: 1px solid var(--primary);
+    // border-top: 1px solid var(--primary);
+    border-top-left-radius: var(--default-border-radius);
+    border-top-right-radius: var(--default-border-radius);
+}
+
+.close {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.close:hover {
+    color: var(--light);
+    text-shadow: 0 0 10px var(--primary);
+}

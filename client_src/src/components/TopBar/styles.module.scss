@@ -1,0 +1,9 @@
+.topbar {
+    background-color: var(--topbar-background);
+    color: var(--topbar-color);
+    height: var(--topbar-height);
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: all 0.2s ease-out;
+}

@@ -1,0 +1,11 @@
+.leftbar {
+    background-color: var(--leftbar-background);
+    width: var(--topbar-width);
+    color: var(--topbar-color);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.2s ease-out;
+    z-index: 10001;
+}

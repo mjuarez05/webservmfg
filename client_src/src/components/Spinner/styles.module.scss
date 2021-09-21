@@ -1,0 +1,20 @@
+.spinner {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 100;
+  -ms-flex: 0 1 100;
+  flex: 0 1 100%;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  text-align: center;
+}
+
+.spinner img {
+  width: 4rem;
+}
+
+.msg {
+  margin-top: calc(var(--default-margin) * 2);
+}

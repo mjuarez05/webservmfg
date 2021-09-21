@@ -1,0 +1,18 @@
+.container {
+    position: absolute;
+    background-color: var(--light);
+    width: 20vw;
+    height: auto;
+    z-index: 9999999;
+    box-shadow: 0 2px 5px grey;
+    padding: var(--default-padding);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-left: calc(50% - 10vw);
+    margin-top: 10vw;
+    flex-wrap: wrap
+}
+.hide {
+    display: none
+}

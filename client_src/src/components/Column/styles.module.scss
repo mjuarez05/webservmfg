@@ -1,0 +1,65 @@
+.container {
+  flex: 1 1 auto;
+  position: relative;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.alignSelfAuto {
+  align-self: auto;
+}
+
+.alignSelfStart {
+  align-self: flex-start;
+}
+
+.alignSelfEnd {
+  align-self: flex-end;
+}
+
+.alignSelfCenter {
+  align-self: center;
+}
+
+.alignSelfBaseline {
+  align-self: baseline;
+}
+
+.alignSelfStretch {
+  align-self: stretch;
+}
+
+.animate {
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

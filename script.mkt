@@ -1,0 +1,23 @@
+::global mac [[/interface ethernet get [find default-name="ether8"] orig-mac-address]]
+if ($mac != "64:D1:54:FA:2C:25" and $mac != "CC:2D:E0:2E:FE:60") do={:error "Interface ether8 MAC $mac does not match (A=64:D1:54:FA:2C:25 or B=CC:2D:E0:2E:FE:60) - please check config\r\nUse orig-mac address!"}
+if ([:len [/file find name=HA_backup_beforeHA.backup]] = 0) do={/system backup save name=HA_backup_beforeHA dont-encrypt=yes}
+
+/delay 2
+/file print file=HA_bootstrap.rsc
+/file set [find name=HA_bootstrap.rsc] contents=":local haBootstrapOK false; :while (!\$haBootstrapOK) do={:do { /ip address add address=\"169.254.23.2/24\" interface=ether8; /user add name=ha group=full password=\"Marfrig.2020\"; :set haBootstrapOK true;} on-error={/log warning \"ha_startup: 0.0 B bootstrap failed...waiting\"; :delay 5};}"
+/system reset-configuration no-defaults=yes keep-users=no skip-backup=yes run-after-reset=HA_bootstrap.rsc
+
+
+:global mac [[/interface ethernet get [find default-name="ether8"] orig-mac-address]]
+:if ($mac != "64:D1:54:FA:2C:25" and $mac != "CC:2D:E0:2E:FE:60") do={
+   :error "Interface ether8 MAC $mac does not match (A=64:D1:54:FA:2C:25 or B=CC:2D:E0:2E:FE:60) - please check config\r\nUse orig-mac address!"
+}
+:if ([:len [/file find name=HA_backup_beforeHA.backup]] = 0) do={
+   /system backup save name=HA_backup_beforeHA dont-encrypt=yes
+   /export file=HA_backup_beforeHA.rsc
+}
+/export file=HA_bootstrap.rsc
+/delay 2
+/file print file=HA_bootstrap.rsc
+/file set [find name=HA_bootstrap.rsc] contents=":local haBootstrapOK false; :while (!\$haBootstrapOK) do={:do { /ip address add address=\"169.254.23.2/24\" interface=ether8; /user add name=ha group=full password=\"Marfrig.2020\"; :set haBootstrapOK true;} on-error={/log warning \"ha_startup: 0.0 B bootstrap failed...waiting\"; :delay 5};}"
+/system reset-configuration no-defaults=yes keep-users=no skip-backup=yes run-after-reset=HA_bootstrap.rsc

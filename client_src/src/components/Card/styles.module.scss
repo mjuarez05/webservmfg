@@ -1,0 +1,8 @@
+.component {
+    display: flex;
+    border-radius: var(--default-border-radius);
+    background-color: var(--light);
+    color: var(--dark);
+    padding: var(--default-padding);
+    box-shadow: 0 0 3px lightgray;
+}

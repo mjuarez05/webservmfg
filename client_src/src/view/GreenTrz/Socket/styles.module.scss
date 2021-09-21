@@ -1,0 +1,41 @@
+.container {
+  padding: 1rem;
+  // background-image: url(../../assets/background.jpg);
+  // background-size: cover;
+  // background-position: left center;
+}
+
+.avatar {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background-image: url(../../../assets/avatar.jpg);
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin-left: 1rem;
+  margin-top: -0.56rem;
+  border: 3px solid white;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  /* text-align: center; */
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: var(--light);
+  /* padding-bottom: 2rem; */
+  margin-bottom: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.titleText {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  margin-left: 7rem;
+}

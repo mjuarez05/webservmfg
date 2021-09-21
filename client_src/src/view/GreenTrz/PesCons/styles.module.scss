@@ -1,0 +1,211 @@
+.form {
+  text-align: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+  /* text-align: center; */
+  margin: var(--default-margin);
+  margin-top: -5.9rem;
+  margin-bottom: 1.8rem;
+  & .shadow {
+    text-shadow: 0 0 3px lightgray;
+  }
+}
+
+.title {
+  /* text-align: center; */
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  vertical-align: middle;
+  align-items: flex-start;
+  background-color: var(--primary);
+  color: var(--light);
+  /* padding-bottom: 2rem; */
+  margin-bottom: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.valormanual {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleText {
+  padding: 1rem;
+  font-size: 3vw;
+  margin-left: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.eliminar {
+  border: 0;
+  cursor: pointer;
+}
+
+.eliminar:hover {
+  box-shadow: 0 0 5px gray;
+}
+
+.detail {
+  background-color: var(--background) !important;
+  color: var(--dark);
+  text-align: center;
+  border-radius: 0.2rem;
+  margin-top: 0.2rem;
+  & span {
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+  }
+}
+.combos {
+  width: calc(50% - 10px);
+  margin-left: 10px;
+}
+// .group {
+//   flex-direction: column;
+// }
+.fullscreenBtn {
+  margin-left: auto !important;
+}
+
+.topheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.numPallet {
+  display: flex;
+  font-size: 1vw;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  & div {
+    font-size: 1.3vw;
+    font-weight: 800;
+  }
+}
+
+.producto {
+  display: flex;
+  font-size: 1vw;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  & div {
+    font-size: 1.3vw;
+    font-weight: 800;
+  }
+}
+
+.detalleBolsas {
+  display: flex;
+  font-size: 1vw;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  & div {
+    font-size: 1.3vw;
+    font-weight: 800;
+  }
+}
+
+.estadoBalaza {
+  margin-left: auto;
+  font-size: 2vw;
+  font-weight: 900;
+}
+.peso {
+  display: flex;
+  font-size: 2vw;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  & div {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+}
+
+.groupPesada {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.marginBottom {
+  margin-bottom: 20px;
+}
+.listaPallet {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  & li {
+    width: 100%;
+    & b {
+      float: right;
+    }
+  }
+}
+
+.bolsas {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px 0 0;
+}
+.groupPesada {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.msg {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.error {
+  background-color: var(--danger);
+  color: var(--light);
+  padding: 0.4rem;
+  border-radius: 3px;
+}
+
+.success {
+  background-color: var(--success);
+  color: var(--light);
+  padding: 0.4rem;
+  border-radius: 3px;
+}
+.blink {
+  padding: 0.4rem;
+  border-radius: 3px;
+  background-color: var(--success);
+  color: var(--light);
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,387 @@
+.icon {
+  font-size: 1.5rem;
+  /* text-align: center; */
+  margin: var(--default-margin);
+  margin-top: -4.95rem;
+  margin-bottom: 1.8rem;
+  & .shadow {
+    text-shadow: 0 0 3px lightgray;
+  }
+}
+
+.title {
+  /* text-align: center; */
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  vertical-align: middle;
+  align-items: flex-start;
+  background-color: var(--primary);
+  color: var(--light);
+  /* padding-bottom: 2rem; */
+  margin-bottom: var(--default-margin);
+  border-radius: 0.2rem;
+}
+
+.titleText {
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin-left: 4.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.plantaContainer {
+  margin-left: var(--default-margin);
+  background-color: white;
+  border-radius: var(--default-border-radius);
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
+  margin-left: auto;
+  display: flex;
+  & label {
+    margin-top: 45px;
+  }
+}
+
+.btn {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.rulerRow {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  background-color: white;
+  left: 0;
+  top: 0;
+  height: 161px;
+  font-size: 10px;
+}
+
+.rulerMainCol {
+  position: sticky;
+  top: 0px;
+  width: -moz-fit-content;
+  // width: fit-content;
+  width: 100%;
+  display: flex;
+  font-size: 10px;
+  background-color: white;
+  margin-left: 10px;
+}
+.rulerCol {
+  min-width: 147px;
+  display: flex;
+  /* margin: 10px; */
+  flex: 1 1 auto;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
+}
+.camaras {
+  padding: calc(var(--default-padding) * 2);
+  border: var(--default-border) solid var(--primary);
+  margin-left: var(--default-margin);
+  height: 1.1rem;
+  border-radius: var(--default-border-radius);
+  cursor: pointer;
+  &:first-child {
+    margin-left: 0;
+  }
+  &.selected {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+}
+
+.cellEmpty {
+  flex: 1 1 auto;
+  padding: var(--default-padding);
+  background-color: var(--light);
+  border: 2px solid var(--light);
+  height: 20px;
+  min-width: 120px;
+  transition: all 250ms ease-out;
+  &:hover {
+    background-color: var(--primary);
+  }
+}
+.cell {
+  border: 1px dotted gray;
+  flex: 1 1 auto;
+  padding: var(--default-padding);
+  background-color: var(--light);
+  transition: all 0.25s ease-out;
+}
+.cell:hover {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--light);
+  box-shadow: 0 0 20px gray;
+}
+.column {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1 1 100%;
+  margin: 10px;
+  border: 2px dashed rgb(167, 167, 167);
+  background-color: rgb(222, 222, 222);
+  // box-shadow: 0 10px 10px gray;
+  border-radius: 5px;
+  padding: var(--default-padding);
+}
+.row {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+}
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.lista {
+  width: 12%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px dashed var(--primary);
+  flex: 1 1 auto;
+}
+
+.loading {
+  align-content: center !important;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 340px);
+  width: 100%;
+}
+.intervenido {
+  background-color: var(--danger) !important;
+  color: var(--light) !important;
+  text-align: center;
+  flex: 1 1 auto;
+  padding: var(--default-padding);
+  height: 20px;
+  min-width: 120px;
+  border: 2px dotted var(--danger);
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+.intervenidoEnPasillo {
+  background-color: var(--danger) !important;
+  color: var(--light) !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--default-padding);
+  list-style-type: none;
+  border: 1px solid var(--danger);
+  text-align: center;
+  margin-bottom: var(--default-margin);
+  border-radius: var(--default-border-radius);
+  & div:first-child {
+    width: 100%;
+  }
+}
+.retenido {
+  background-color: var(--dark) !important;
+  color: var(--light) !important;
+  text-align: center;
+  flex: 1 1 auto;
+  padding: var(--default-padding);
+  height: 20px;
+  min-width: 120px;
+  border: 2px dotted var(--danger);
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+.retenidoEnPasillo {
+  background-color: var(--dark) !important;
+  color: var(--light) !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--default-padding);
+  list-style-type: none;
+  border: 1px solid var(--dark);
+  text-align: center;
+  margin-bottom: var(--default-margin);
+  border-radius: var(--default-border-radius);
+  & div:first-child {
+    width: 100%;
+  }
+}
+.draghover {
+  background-color: var(--primary);
+  text-align: center;
+  color: var(--light);
+  flex: 1 1 auto;
+  padding: var(--default-padding);
+  height: 20px;
+}
+.draghoverpallet {
+  border: 2px dotted var(--primary) !important;
+}
+.cellOccupied {
+  background-color: var(--primary);
+  text-align: center;
+  color: var(--light);
+  flex: 1 1 auto;
+  padding: var(--default-padding);
+  height: 20px;
+  min-width: 120px;
+  border: 2px dotted var(--primary);
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+.cellOccupied:hover {
+  border: 2px dotted var(--light);
+}
+.disable {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 10px;
+}
+.disabled {
+  background-color: var(--background) !important;
+  pointer-events: none;
+}
+.pallet {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--default-padding);
+  list-style-type: none;
+  border: 1px solid var(--primary);
+  text-align: center;
+  margin-bottom: var(--default-margin);
+  border-radius: var(--default-border-radius);
+  &:hover {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  & div:first-child {
+    width: 100%;
+  }
+}
+.modal {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #35baf6ba;
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  background-color: white;
+  position: relative;
+  border: 2px solid var(--primary);
+  width: fit-content;
+  padding: calc(var(--default-padding) * 3);
+  border-radius: var(--default-border-radius);
+  height: fit-content;
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+  & li {
+    list-style: none;
+    margin-bottom: var(--default-margin);
+  }
+}
+
+.boxDes {
+  background-color: white;
+  position: relative;
+  border: 2px solid var(--primary);
+  width: fit-content;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: calc(var(--default-padding) * 3);
+  border-radius: var(--default-border-radius);
+  height: fit-content;
+  & ul {
+    margin: 0 0 0 var(--default-margin);
+    padding: 0;
+  }
+  & li {
+    list-style: none;
+    margin-bottom: var(--default-margin);
+  }
+}
+.pallets {
+  margin: var(--default-margin);
+  padding: var(--default-padding);
+  border: 2px solid transparent;
+  overflow: hidden auto;
+  height: calc(100vh - 400px);
+  transition: all 0.25s ease-out;
+  border-radius: 0.2rem;
+}
+
+.listPalletsDes {
+  margin: var(--default-margin);
+  padding: var(--default-padding);
+  border: 2px solid transparent;
+  overflow: hidden auto;
+  height: calc(100vh - 200px);
+  transition: all 0.25s ease-out;
+  border-radius: 0.2rem;
+  width: 100%;
+}
+
+.palletDes {
+  text-align: center;
+  cursor: pointer;
+  padding: var(--default-padding);
+  list-style-type: none;
+  border: 1px solid var(--primary);
+  text-align: center;
+  margin-bottom: var(--default-margin);
+  border-radius: var(--default-border-radius);
+  &:hover {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  & div:first-child {
+    width: 100%;
+  }
+}
+
+.titlepallets {
+  margin: var(--default-margin);
+  padding: var(--default-padding);
+  text-align: center;
+  border-bottom: 1px solid var(--primary);
+}
+.infoTitle {
+  margin-top: 10px;
+  padding-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid var(--primary);
+  margin-bottom: 10px;
+}
+.boxinfo {
+  width: 400px;
+}

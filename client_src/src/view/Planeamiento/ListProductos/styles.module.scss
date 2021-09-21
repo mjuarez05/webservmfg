@@ -1,0 +1,30 @@
+.form {
+  text-align: center;
+}
+
+.icon {
+  font-size: 2rem;
+  text-align: center;
+  margin: var(--default-margin);
+  margin-top: -2.6rem;
+  & .shadow {
+    text-shadow: 0 0 3px lightgray;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: var(--light);
+  padding-bottom: 2rem;
+}
+
+.eliminar {
+  border: 0;
+  cursor: pointer;
+}
+
+.eliminar:hover {
+  box-shadow: 0 0 5px gray;
+}

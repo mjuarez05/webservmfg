@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    & input[type="checkbox"] {
+        opacity: 0;
+        position: absolute;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+    }
+    & label {
+        position: relative;
+        display: inline-block;
+        padding-left: 34px;
+        padding-top: 4px;
+        margin-bottom: 1rem;
+    }
+    & label::before,
+    & label::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+    }
+    & label::before {
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+        border-radius: var(--default-border-radius);
+        border: var(--default-border) solid var(--primary);
+        left: 0px;
+        top: 0px;
+    }
+    & label::after {
+        height: 6px;
+        width: 11px;
+        border-left: 2px solid;
+        border-bottom: 2px solid;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        left: 8px;
+        top: 8px;
+        color: var(--primary);
+    }
+    & input[type="checkbox"]+label::after {
+        content: none;
+    }
+    & input[type="checkbox"]:checked+label::after {
+        content: "";
+    }
+    & input[type="checkbox"]:focus+label::before {
+        outline: rgb(59, 153, 252) auto 5px;
+    }
+}
+
+.container.disabled  label::before {
+        border-color: var(--default-color-disabled);
+        background-color: var(--default-color-disabled);
+        cursor: not-allowed;
+}

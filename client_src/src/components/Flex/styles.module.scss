@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.row {
+  flex-direction: row;
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.column {
+  flex-direction: column;
+  &.reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+// align horizontal
+// The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
+.justifyContentCenter {
+  justify-content: center;
+}
+
+.justifyContentStart {
+  justify-content: flex-start;
+}
+
+.justifyContentEnd {
+  justify-content: flex-end;
+}
+
+.justifyContentBetween {
+  justify-content: space-between;
+}
+
+.justifyContentAround {
+  justify-content: space-around;
+}
+
+// align vertical
+// The align-items property specifies the default alignment for items inside the flexible container.
+.alignItemsCenter {
+  align-items: center;
+}
+
+.alignItemsStart {
+  align-items: flex-start;
+}
+
+.alignItemsEnd {
+  align-items: flex-end;
+}
+
+.alignItemsStretch {
+  align-items: stretch;
+}
+
+.alignItemsBaseline {
+  align-items: baseline;
+}
+
+// align vertical Only multi-line flex
+// The align-content property specifies the default alignment for items inside the flexible container.
+.alignContentCenter {
+  align-content: center;
+}
+
+.alignContentStart {
+  align-content: flex-start;
+}
+
+.alignContentEnd {
+  align-content: flex-end;
+}
+
+.alignContentStretch {
+  align-content: stretch;
+}
+
+.alignContentBetween {
+  align-content: space-between;
+}
+
+.alignContentAround {
+  align-content: space-around;
+}
+
+//wrap
+//The flex-wrap property specifies whether the flexible items should wrap or not.
+.wrap {
+  flex-wrap: wrap;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.wrapReverse {
+  flex-wrap: wrap-reverse;
+}

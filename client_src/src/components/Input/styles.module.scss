@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.component {
+  font-size: var(--default-font-size);
+  border-radius: var(--default-border-radius);
+  padding: var(--default-padding);
+  width: 100%;
+  margin-bottom: 1.4rem;
+  background-color: transparent;
+}
+
+.border {
+  border: var(--default-border) solid var(--primary);
+}
+
+.withoutBorder {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: var(--default-border) solid var(--primary);
+  border-radius: 0;
+}
+
+.label {
+  color: var(--label);
+  position: absolute;
+  margin-top: 32px;
+  font-size: 10px;
+}
+
+.disabled {
+  border-color: var(--default-color-disabled);
+  background-color: var(--default-color-disabled);
+  cursor: not-allowed;
+}
+
+.labeltime {
+  color: var(--label);
+  position: absolute;
+  margin-top: 38px;
+  font-size: 10px;
+}
