@@ -78,8 +78,6 @@ declare const MarfrigWebAppComponent_base: (new (...args: any[]) => {
         (event: string | symbol, listener: (...args: any[]) => void): import("@loopback/core").Application;
     };
     addListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
-    prependListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
-    prependOnceListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
     removeListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
     off: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
     removeAllListeners: (event?: string | symbol | undefined) => import("@loopback/core").Application;
@@ -88,8 +86,10 @@ declare const MarfrigWebAppComponent_base: (new (...args: any[]) => {
     listeners: (event: string | symbol) => Function[];
     rawListeners: (event: string | symbol) => Function[];
     emit: (event: string | symbol, ...args: any[]) => boolean;
-    eventNames: () => (string | symbol)[];
     listenerCount: (type: string | symbol) => number;
+    prependListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
+    prependOnceListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
+    eventNames: () => (string | symbol)[];
 }) & (new (...args: any[]) => {
     serviceProvider<S_1>(provider: import("@loopback/core").Constructor<import("@loopback/core").Provider<S_1>>, nameOrOptions?: string | import("@loopback/core").ServiceOptions | undefined): import("@loopback/boot").Binding<S_1>;
     component<C_1 extends import("@loopback/core").Component = import("@loopback/core").Component>(componentCtor: import("@loopback/core").Constructor<C_1>, nameOrOptions?: string | import("@loopback/core").BindingFromClassOptions | undefined): import("@loopback/boot").Binding<C_1>;
@@ -108,7 +108,7 @@ declare const MarfrigWebAppComponent_base: (new (...args: any[]) => {
     onStop: (fn: () => import("@loopback/core").ValueOrPromise<void>) => import("@loopback/boot").Binding<import("@loopback/core").LifeCycleObserver>;
     setMetadata: (metadata: import("@loopback/core").ApplicationMetadata) => void;
     lifeCycleObserver: <T_5_1 extends import("@loopback/core").LifeCycleObserver>(ctor: import("@loopback/core").Constructor<T_5_1>, nameOrOptions?: string | import("@loopback/core").BindingFromClassOptions | undefined) => import("@loopback/boot").Binding<T_5_1>;
-    service: <S_2>(cls: import("@loopback/core").ServiceOrProviderClass<S_2>, nameOrOptions?: string | import("@loopback/core").ServiceOptions | undefined) => import("@loopback/boot").Binding<S_2>;
+    service: <S_1_1>(cls: import("@loopback/core").ServiceOrProviderClass<S_1_1>, nameOrOptions?: string | import("@loopback/core").ServiceOptions | undefined) => import("@loopback/boot").Binding<S_1_1>;
     interceptor: (interceptor: import("@loopback/core").Interceptor | import("@loopback/core").Constructor<import("@loopback/core").Provider<import("@loopback/core").Interceptor>>, nameOrOptions?: string | import("@loopback/core").InterceptorBindingOptions | undefined) => import("@loopback/boot").Binding<import("@loopback/core").Interceptor>;
     readonly name: string;
     readonly subscriptionManager: import("@loopback/core").ContextSubscriptionManager;
@@ -163,8 +163,6 @@ declare const MarfrigWebAppComponent_base: (new (...args: any[]) => {
         (event: string | symbol, listener: (...args: any[]) => void): import("@loopback/core").Application;
     };
     addListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
-    prependListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
-    prependOnceListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
     removeListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
     off: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
     removeAllListeners: (event?: string | symbol | undefined) => import("@loopback/core").Application;
@@ -173,12 +171,14 @@ declare const MarfrigWebAppComponent_base: (new (...args: any[]) => {
     listeners: (event: string | symbol) => Function[];
     rawListeners: (event: string | symbol) => Function[];
     emit: (event: string | symbol, ...args: any[]) => boolean;
-    eventNames: () => (string | symbol)[];
     listenerCount: (type: string | symbol) => number;
+    prependListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
+    prependOnceListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
+    eventNames: () => (string | symbol)[];
 }) & (new (...args: any[]) => {
     repository<R extends import("@loopback/repository").Repository<any>>(repoClass: import("@loopback/repository").Class<R>, nameOrOptions?: string | import("@loopback/core").BindingFromClassOptions | undefined): import("@loopback/boot").Binding<R>;
-    getRepository<R_2 extends import("@loopback/repository").Repository<any>>(repo: import("@loopback/repository").Class<R_2>): Promise<R_2>;
-    dataSource<D extends import("loopback-datasource-juggler").DataSource>(dataSource: D | import("@loopback/repository").Class<D>, nameOrOptions?: string | import("@loopback/core").BindingFromClassOptions | undefined): import("@loopback/boot").Binding<D>;
+    getRepository<R_1 extends import("@loopback/repository").Repository<any>>(repo: import("@loopback/repository").Class<R_1>): Promise<R_1>;
+    dataSource<D extends import("@loopback/repository").JugglerDataSource>(dataSource: D | import("@loopback/repository").Class<D>, nameOrOptions?: string | import("@loopback/core").BindingFromClassOptions | undefined): import("@loopback/boot").Binding<D>;
     model<M extends import("@loopback/repository").Class<unknown>>(modelClass: M): import("@loopback/boot").Binding<M>;
     component<C_2 extends import("@loopback/core").Component = import("@loopback/core").Component>(componentCtor: import("@loopback/core").Constructor<C_2>, nameOrOptions?: string | import("@loopback/core").BindingFromClassOptions | undefined): import("@loopback/boot").Binding<C_2>;
     mountComponentRepositories(componentInstanceOrClass: import("@loopback/repository").RepositoryComponent | import("@loopback/repository").Class<unknown>): void;
@@ -198,7 +198,7 @@ declare const MarfrigWebAppComponent_base: (new (...args: any[]) => {
     onStop: (fn: () => import("@loopback/core").ValueOrPromise<void>) => import("@loopback/boot").Binding<import("@loopback/core").LifeCycleObserver>;
     setMetadata: (metadata: import("@loopback/core").ApplicationMetadata) => void;
     lifeCycleObserver: <T_5_2 extends import("@loopback/core").LifeCycleObserver>(ctor: import("@loopback/core").Constructor<T_5_2>, nameOrOptions?: string | import("@loopback/core").BindingFromClassOptions | undefined) => import("@loopback/boot").Binding<T_5_2>;
-    service: <S_3>(cls: import("@loopback/core").ServiceOrProviderClass<S_3>, nameOrOptions?: string | import("@loopback/core").ServiceOptions | undefined) => import("@loopback/boot").Binding<S_3>;
+    service: <S_2>(cls: import("@loopback/core").ServiceOrProviderClass<S_2>, nameOrOptions?: string | import("@loopback/core").ServiceOptions | undefined) => import("@loopback/boot").Binding<S_2>;
     interceptor: (interceptor: import("@loopback/core").Interceptor | import("@loopback/core").Constructor<import("@loopback/core").Provider<import("@loopback/core").Interceptor>>, nameOrOptions?: string | import("@loopback/core").InterceptorBindingOptions | undefined) => import("@loopback/boot").Binding<import("@loopback/core").Interceptor>;
     readonly name: string;
     readonly subscriptionManager: import("@loopback/core").ContextSubscriptionManager;
@@ -253,8 +253,6 @@ declare const MarfrigWebAppComponent_base: (new (...args: any[]) => {
         (event: string | symbol, listener: (...args: any[]) => void): import("@loopback/core").Application;
     };
     addListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
-    prependListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
-    prependOnceListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
     removeListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
     off: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
     removeAllListeners: (event?: string | symbol | undefined) => import("@loopback/core").Application;
@@ -263,8 +261,10 @@ declare const MarfrigWebAppComponent_base: (new (...args: any[]) => {
     listeners: (event: string | symbol) => Function[];
     rawListeners: (event: string | symbol) => Function[];
     emit: (event: string | symbol, ...args: any[]) => boolean;
-    eventNames: () => (string | symbol)[];
     listenerCount: (type: string | symbol) => number;
+    prependListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
+    prependOnceListener: (event: string | symbol, listener: (...args: any[]) => void) => import("@loopback/core").Application;
+    eventNames: () => (string | symbol)[];
 }) & typeof RestApplication;
 export declare class MarfrigWebAppComponent extends MarfrigWebAppComponent_base {
     constructor(options?: ApplicationConfig);

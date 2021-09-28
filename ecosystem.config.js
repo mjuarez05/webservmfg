@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'MarfrigWebApi',
+      name: 'Web Service SJ',
       script: 'index.js',
       instances: 1,
       autorestart: true,
